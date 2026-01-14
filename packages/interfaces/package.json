@@ -1,0 +1,20 @@
+{
+  "name": "@repo/interfaces",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start:dev": "tsx watch index.ts",
+    "build": "echo 'Add build script here'",
+    "test": "echo 'Add test script here'",
+    "lint": "echo 'Add lint script here'"
+  },
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
