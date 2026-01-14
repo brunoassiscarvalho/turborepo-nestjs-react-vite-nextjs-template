@@ -20,17 +20,20 @@ export class ProductsService {
     return this.productModel.find().exec();
   }
 
-  findOne(id: string): Promise<Product> {
+  findOne(id: string): Promise<Product | null> {
     return this.productModel.findById(id).exec();
   }
 
-  update(id: string, updateProductDto: UpdateProductDto): Promise<Product> {
+  update(
+    id: string,
+    updateProductDto: UpdateProductDto,
+  ): Promise<Product | null> {
     return this.productModel
       .findByIdAndUpdate(id, updateProductDto, { new: true })
       .exec();
   }
 
-  remove(id: string): Promise<Product> {
+  remove(id: string): Promise<Product | null> {
     return this.productModel.findByIdAndDelete(id).exec();
   }
 }
