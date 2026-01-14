@@ -22,6 +22,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "@auth0/auth0-react": "^2.11.0",
     "@nestjs/mapped-types": "*",
     "tailwindcss": "^4.1.18"
   }
